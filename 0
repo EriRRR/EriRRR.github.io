@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de video</title>
+</head>
+<body>
+    <video id="myVideo" width="480" height="672" autoplay loop controls>
+      <source src="MEDIA/INVITACION TIENDA.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  <button onclick="muteVideo()">Silenciar</button>
+
+  <script>
+    function muteVideo() {
+      var video = document.getElementById("myVideo");
+      video.muted = !video.muted;
+    }
+  </script>
+</body>
+</html>

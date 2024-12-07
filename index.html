@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina's Store</title>
+</head>
+<body>
+  <div>
+    <h1>Valentina's Store</h1>
+    <video id="myVideo" width="480" height="672" autoplay loop muted controls>
+      <source src="MEDIA/INVITACION TIENDA.mp4" type="video/mp4">
+    </video>
+    <button onclick="muteVideo()">Silenciar/Activar Sonido</button>
+  </div>
+  <div>
+    <h1>Valentina's Store</h1>
+    <p>Encuéntranos en la siguiente ubicación:</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15530.370462213996!2d-87.1742781!3d13.3133695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f703d13bce5f9cf%3A0xab12de5ac337d841!2sValentinas%20store%20Choluteca!5e0!3m2!1ses-419!2shn!4v1733556202309!5m2!1ses-419!2shn"
+      width="600"
+      height="450"
+      style="border:0;" 
+      allowfullscreen=""
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+
+    <script>
+        function muteVideo() {
+            var video = document.getElementById("myVideo");
+            video.muted = !video.muted;
+        }
+    </script>
+</body>
+</html>
